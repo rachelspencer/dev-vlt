@@ -1,9 +1,13 @@
 import React from "react";
+import Header from "./Sections/Header";
 import Intro from "./Sections/Intro";
 
 function App() {
     return (
-        <Intro></Intro>
+        <div>
+            <Header/>
+            <Intro/>
+        </div>
     )
 };
 
