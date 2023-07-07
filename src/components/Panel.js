@@ -1,6 +1,12 @@
-function Panel() {
+import './Panel.css';
+
+function Panel({
+    children, 
+    className, 
+    ...rest}) {
+
     return (
-        <div>
+        <div className='panel'>
             Panel
         </div>
     )

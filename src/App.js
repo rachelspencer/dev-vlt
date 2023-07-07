@@ -1,6 +1,9 @@
+import React from "react";
+import Intro from "./Sections/Intro";
+
 function App() {
     return (
-        <div>hello world</div>
+        <Intro></Intro>
     )
 };
 
