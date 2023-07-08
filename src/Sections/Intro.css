@@ -2,22 +2,65 @@
     width: 300px;
 }
 
+h1 {
+    font-family: 'Outfit';
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Outfit';
+    font-weight: 200;
+}
 
 /* Media for smartphone*/
 @media (max-width: 480px){
     .intro {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
+
+    /* .intro-panel {
+        
+    } */
     
     h1 {
         color: black;
+        text-align: center;
+    }
+
+    p{
+        text-align: justify;
+        padding: 0px 20px;
+        margin: 0px;
+    }
+
+    .logo {
+        width:100%;
+        height: auto;
     }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
+    
     h1 {
         color: orange;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p{
+        text-justify: distribute;
+        text-align: justify;
+        padding: 0px 20px;
+        margin: 0px;
+    }
+
+    .logo {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
