@@ -1,3 +1,17 @@
+.intro {
+    display: block;
+}
+
 .logo {
     width: 300px
+};
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .intro {
+        display: flex;
+    }
+
+    .intro-panel{
+        flex-direction: row;
+    }
 };
