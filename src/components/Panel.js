@@ -6,7 +6,7 @@ function Panel({
     ...rest}) {
 
     return (
-        <div className='panel'>
+        <div className={className}>
             {children}
         </div>
     )

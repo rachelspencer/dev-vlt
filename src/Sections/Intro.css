@@ -1,12 +1,44 @@
-.intro {
-    display: block;
+.logo {
+    width: 300px;
 }
 
-.logo {
-    width: 300px
-};
 
-@media (min-width: 768px) and (max-width: 1024px){
+/* Media for smartphone*/
+@media (max-width: 480px){
+    .intro {
+        display: block;
+    }
+    
+    h1 {
+        color: black;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    h1 {
+        color: orange;
+    }
+}
+
+/* Media for tablet and ipads landscape*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    h1 {
+        color: green;
+    }
+
+}
+
+/* Media for tablet and ipads portrait*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    h1 {
+        color: red;
+    }
+
+}
+
+/* Media for desktop*/
+@media (min-width: 1025px) and (max-width: 1280px){
     .intro {
         display: flex;
     }
@@ -14,4 +46,24 @@
     .intro-panel{
         flex-direction: row;
     }
-};
+   
+    h1 {
+        color: purple;
+    }
+}
+
+/* Media for desktop*/
+@media (min-width: 1281px){
+    .intro {
+        display: flex;
+    }
+
+    .intro-panel{
+        flex-direction: row;
+    }
+
+    h1 {
+        color: blue;
+    }
+    
+}
